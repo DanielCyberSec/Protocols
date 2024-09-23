@@ -1,0 +1,18 @@
+###### SCP ###### 
+-----17/09/24----
+->exportar un archivo con scp mediante ssh:
+scp nameFile.ext user@remoteServer:/path
+examples:
+scp sshGenerationAndExport.txt danielvg@192.168.1.71:/home/danielvg/Documents
+scp sshGenerationAndExport.txt daniel@192.168.1.68:/home/danielvg/Documentos
+
+->exportar un directorio con scp mediante ssh:
+scp -r nameDirectory user@remoteServer:/path
+examples:
+scp -r protocolsUsage danielvg@192.168.1.71:/home/danielvg/Documents
+
+->importar un archivo:
+scp user@remoteServer:/path resultName or .
+
+->importar un directorio:
+scp -r user@remoteServer:/path resultName or .

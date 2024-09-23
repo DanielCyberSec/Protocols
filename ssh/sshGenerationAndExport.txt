@@ -1,0 +1,10 @@
+sudo apt install openssh-client
+
+ED25519: Este es un algoritmo moderno y seguro que utiliza un tamaño de clave fijo de 256 bits. 
+Es más rápido y se considera más seguro que RSA. Para generar una clave ED25519, usa:
+ssh-keygen -t ed25519
+
+By default, the public key is saved in the file ~/.ssh/id_ed25519.pub, while ~/.ssh/id_ed25519 is the private key. 
+Now copy the id_ed25519.pub file to the remote host and append it to ~/.ssh/authorized_keys by running:
+ssh-copy-id username@remotehost
+

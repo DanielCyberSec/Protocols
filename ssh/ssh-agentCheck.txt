@@ -1,1 +1,0 @@
-omprueba con echo $SSH_AGENT_PID si la sesión tiene un ssh-agent activo.

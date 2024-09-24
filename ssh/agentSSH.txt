@@ -1,0 +1,14 @@
+Comprueba si el agente está activo:
+echo $SSH_AGENT_PID
+
+Inicia el agente:
+eval "$(ssh-agent -s)"
+
+Agrega tu llave:
+ssh-add /ruta/a/tu/llave_privada
+
+Verificar que la llave se agregó:
+ssh-add -l
+
+Terminar el agente:
+eval "$(ssh-agent -s)"

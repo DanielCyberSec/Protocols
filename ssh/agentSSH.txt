@@ -10,5 +10,9 @@ ssh-add /ruta/a/tu/llave_privada
 Verificar que la llave se agregó:
 ssh-add -l
 
+------------------------------------------
+Eliminar llaves del agente:
+ssh-add -D
+
 Terminar el agente:
-eval "$(ssh-agent -s)"
+eval "$(ssh-agent -k)"
